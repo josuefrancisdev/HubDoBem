@@ -1,0 +1,88 @@
+/* ===========================
+   Menu de Navegação
+=========================== */
+
+/* Menu principal */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Lista de links */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--space-4);
+}
+
+/* Links do menu */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--color-accent);
+}
+
+/* Dropdown */
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-primary);
+  padding: var(--space-2);
+  border-radius: 8px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Menu hambúrguer (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: var(--space-2);
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: var(--space-2);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

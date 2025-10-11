@@ -1,0 +1,50 @@
+/* ===========================
+   Layout Principal
+=========================== */
+
+/* Container geral */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-4);
+}
+
+/* Seções do site (ex: header, main, footer) */
+header, main, footer {
+  grid-column: 1 / -1;
+  margin-bottom: var(--space-5);
+}
+
+/* Flexbox interno para seções específicas */
+.section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-flex {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  /* 🎨 Paleta de Cores */
+  --color-primary: #004aad;
+  --color-primary-light: #3b82f6;
+  --color-secondary: #00bfa6;
+  --color-accent: #ffb703;
+  --color-success: #22c55e;
+  --color-warning: #facc15;
+  --color-danger: #ef4444;
+  --color-neutral: #f3f4f6;
+  --color-dark: #1f2937;
+
+  /* 🅰️ Tipografia */
+  --font-family-base: 'Poppins', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+
+  /* 📏 Espaçamentos (Sistema Modular) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+}

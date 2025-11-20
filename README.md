@@ -29,3 +29,19 @@ O sistema simula uma **livraria online**, permitindo o gerenciamento de:
 1. **Clonar o repositório**  
 ```bash
 git clone <URL_DO_REPOSITORIO>
+---
+
+## Observações
+
+- Os scripts foram preparados para manter a integridade dos dados.  
+- As consultas e alterações simulam situações reais de uma livraria.  
+- Sinta-se à vontade para experimentar novas queries ou modificar os dados para testar diferentes cenários.  
+- O objetivo é aprender a criar, manipular e manter um banco de dados de forma prática e segura.
+
+---
+
+## Próximos passos (sugestão)
+
+- Criar queries mais avançadas com JOINs complexos.  
+- Implementar relatórios resumidos (ex.: livros mais vendidos, clientes ativos).  
+- Testar restrições e triggers para automatizar algumas tarefas.
